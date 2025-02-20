@@ -1,0 +1,12 @@
+/*
+### Example Endpoint Test
+*/
+GET {{host}}:5000/example
+
+> {%
+
+client.test("Status code is 200", function() {
+    client.assert(response.status === 200, "Response status is not 200");
+});
+
+%}
