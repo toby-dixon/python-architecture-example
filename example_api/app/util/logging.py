@@ -60,7 +60,7 @@ def auto_log(func):
         3. Retrieves collected logs
         4. Wraps the original response in the final format.
     Args:
-        func (_type_): The route handler function 
+        func (method): The route handler function 
     """
     
     @wraps(func)
